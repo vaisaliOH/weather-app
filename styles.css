@@ -1,0 +1,115 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #4682B4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.weather {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 400px;
+    margin-bottom: 20px;
+}
+
+.weather input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+button[type="submit"]{
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.weather button:hover {
+    background-color: #333;
+}
+
+.one {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.one h1, .one p {
+    margin: 10px 0;
+    text-align: center;
+}
+
+
+.cityname {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.tempname {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.humid {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.emoji {
+    font-size: 3rem;
+    margin-top: 15px;
+}
+
+@media only screen and (max-width: 768px) {
+    .one {
+        max-width: 90%;
+    }
+
+    .one h1 {
+        font-size: 1.8rem;
+    }
+
+    .one p {
+        font-size: 1rem;
+    }
+
+    .emoji {
+        font-size: 2.5rem;
+    }
+}
+
+
+.typeweather {
+    font-style: italic;
+    font-size: 1.2rem;
+}
+
+.error {
+    color: red;
+    font-size: 1rem;
+    margin-top: 10px;
+}
